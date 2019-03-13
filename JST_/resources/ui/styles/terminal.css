@@ -1,0 +1,62 @@
+body {
+    overflow-x: hidden;
+    background-color: black;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    text-decoration: none;
+}
+
+#terminalinput {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 18px;
+}
+
+.passwordInput {
+    color: black;
+    caret-color: white;
+}
+
+.passwordInput::selection {
+    color: black;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+#terminal {
+    visibility: visible;
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+    height: 95vh;
+    vertical-align: bottom;
+    display: table-cell;
+}
+
+.terminal-blocks {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#terminalinputEditable {
+    pointer-events: none;
+    margin-left: 6px;
+    min-width: 18px;
+    min-height: 18px;
+}
+
+td {
+    padding-right: 10px;
+    text-align: right;
+}
+
+td:last-of-type {
+    text-align: left;
+}
